@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from "@angular/core";
 export class CategoryList implements PipeTransform {
   transform(mediaItems) {
       const categories = mediaItems.map(mediaItem => mediaItem.category);
-      return [...new Set(categories)].join();
+      return [...new Set<String>(categories)].join();
   }
 
 }
