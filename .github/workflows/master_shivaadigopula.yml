@@ -33,7 +33,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: shivaadigopula
-        slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1F08BDFF773A4D26AB2496FAD82637AE }}
-        package: .
+        package: ./dist/angular-essential-training
 
